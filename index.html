@@ -46,6 +46,7 @@ h2 { font-size: 1.5rem; color: #fbbf24; margin-bottom: 20px; }
   transition: border-color 0.2s;
 }
 .tool-card:hover { border-color: #fbbf24; }
+.tool-card.featured { border-color: #fbbf24; background: #0f172a; }
 .tool-card h3 { color: #e0e6ed; margin-bottom: 8px; font-size: 1.1rem; }
 .tool-card p { color: #9ca3af; font-size: 0.9rem; margin-bottom: 16px; }
 .tool-card a {
@@ -112,6 +113,11 @@ footer {
   <div class="container">
     <h2>Open Source Tools</h2>
     <div class="tools">
+      <div class="tool-card featured">
+        <h3>🚀 Jupiter TradingView Bridge</h3>
+        <p>Execute Jupiter swaps, limit orders, and DCA directly from TradingView alerts. The missing link between technical analysis and Solana execution.</p>
+        <a href="https://github.com/hcukkai/tradingview-webhook-server" target="_blank">View on GitHub &rarr;</a>
+      </div>
       <div class="tool-card">
         <h3>TradingView Webhook Server</h3>
         <p>Production-ready webhook server with HMAC auth, Discord alerts, paper trading, and auto position sizing.</p>
@@ -123,8 +129,8 @@ footer {
         <a href="https://github.com/hcukkai/position-size-calculator" target="_blank">View on GitHub &rarr;</a>
       </div>
       <div class="tool-card">
-        <h3>Options P&L Visualizer</h3>
-        <p>Interactive profit/loss chart for calls and puts. Visualize risk before you trade.</p>
+        <h3>Options P&L Visualizer Pro</h3>
+        <p>Black-Scholes pricing with Greeks. Multi-time P&L curves showing theta decay. Visualize risk before you trade.</p>
         <a href="https://github.com/hcukkai/options-pl-visualizer" target="_blank">View on GitHub &rarr;</a>
       </div>
     </div>
