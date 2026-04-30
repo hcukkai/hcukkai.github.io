@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hcukkai - Trading Tools & Automation</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0a0e1a;
+  color: #e0e6ed;
+  line-height: 1.6;
+}
+.container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+header {
+  padding: 60px 0 40px;
+  text-align: center;
+  border-bottom: 1px solid #1f2937;
+}
+header h1 { font-size: 2.5rem; color: #fbbf24; margin-bottom: 12px; }
+header p { font-size: 1.1rem; color: #9ca3af; max-width: 560px; margin: 0 auto; }
+.badge {
+  display: inline-block;
+  background: #1f2937;
+  color: #fbbf24;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 4px;
+  border: 1px solid #374151;
+}
+section { padding: 48px 0; border-bottom: 1px solid #1f2937; }
+h2 { font-size: 1.5rem; color: #fbbf24; margin-bottom: 20px; }
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.tool-card {
+  background: #111827;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #1f2937;
+  transition: border-color 0.2s;
+}
+.tool-card:hover { border-color: #fbbf24; }
+.tool-card h3 { color: #e0e6ed; margin-bottom: 8px; font-size: 1.1rem; }
+.tool-card p { color: #9ca3af; font-size: 0.9rem; margin-bottom: 16px; }
+.tool-card a {
+  color: #fbbf24;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.tool-card a:hover { text-decoration: underline; }
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.service-card {
+  background: #111827;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #1f2937;
+}
+.service-card h3 { color: #e0e6ed; margin-bottom: 8px; font-size: 1rem; }
+.service-card p { color: #9ca3af; font-size: 0.85rem; }
+.price { color: #22c55e; font-weight: 700; font-size: 1.1rem; margin-top: 12px; }
+.cta {
+  text-align: center;
+  padding: 60px 0;
+}
+.cta a {
+  display: inline-block;
+  background: #fbbf24;
+  color: #0a0e1a;
+  padding: 16px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.cta a:hover { opacity: 0.9; }
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>hcukkai</h1>
+    <p>Trading tools, automation bots, and web3 integrations. Built fast, shipped faster.</p>
+    <div style="margin-top:20px">
+      <span class="badge">Node.js</span>
+      <span class="badge">Python</span>
+      <span class="badge">Pine Script</span>
+      <span class="badge">Discord Bots</span>
+      <span class="badge">Webhooks</span>
+      <span class="badge">Smart Contracts</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Open Source Tools</h2>
+    <div class="tools">
+      <div class="tool-card">
+        <h3>TradingView Webhook Server</h3>
+        <p>Production-ready webhook server with HMAC auth, Discord alerts, paper trading, and auto position sizing.</p>
+        <a href="https://github.com/hcukkai/tradingview-webhook-server" target="_blank">View on GitHub &rarr;</a>
+      </div>
+      <div class="tool-card">
+        <h3>Position Size Calculator</h3>
+        <p>Client-side risk calculator for crypto, forex, and stocks. Leverage support, breakeven win rate.</p>
+        <a href="https://github.com/hcukkai/position-size-calculator" target="_blank">View on GitHub &rarr;</a>
+      </div>
+      <div class="tool-card">
+        <h3>Options P&L Visualizer</h3>
+        <p>Interactive profit/loss chart for calls and puts. Visualize risk before you trade.</p>
+        <a href="https://github.com/hcukkai/options-pl-visualizer" target="_blank">View on GitHub &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Custom Trading Bots</h3>
+        <p>Webhook servers, alert bots, auto-execution with your broker or exchange.</p>
+        <div class="price">From $200</div>
+      </div>
+      <div class="service-card">
+        <h3>Discord Bots</h3>
+        <p>Price alerts, portfolio tracking, signal broadcasting, community automation.</p>
+        <div class="price">From $150</div>
+      </div>
+      <div class="service-card">
+        <h3>Dashboards & Tools</h3>
+        <p>Position sizing, P&L tracking, risk management calculators.</p>
+        <div class="price">From $100</div>
+      </div>
+      <div class="service-card">
+        <h3>Web3 Scripts</h3>
+        <p>Airdrop farming, testnet automation, smart contract interactions.</p>
+        <div class="price">From $150</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2 style="border:none">Ready to build?</h2>
+    <p style="color:#9ca3af;margin-bottom:24px">DM on Reddit or Discord. Fast turnaround, clear communication.</p>
+    <a href="https://reddit.com/user/hcukkai" target="_blank">Message on Reddit</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    &copy; 2026 hcukkai. All tools are open source. Tips appreciated.
+  </div>
+</footer>
+</body>
+</html>
